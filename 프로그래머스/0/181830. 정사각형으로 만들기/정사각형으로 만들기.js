@@ -1,6 +1,7 @@
 function solution(arr) {
     //행 : 1차원 배열의 원소 갯수, 열 : 2차원 배열의 길이.
     //행의 수가 많으면 각 원소에 0을 추가.  
+    //이차원 배열의 복사 방식 공부할 것.
     let answer = arr.map(el => [...el]);
     if(arr.length > arr[0].length){
         for(let i = 0 ; i < (arr.length - arr[0].length); i++){ 
