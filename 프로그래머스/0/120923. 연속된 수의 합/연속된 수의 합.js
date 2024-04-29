@@ -1,8 +1,8 @@
 function solution(num, total) {
     var answer = [];
-    const middle = Math.ceil(total/num);
+    const start = Math.ceil((2 * total / num - (num - 1)) / 2);
     for(let i = 0 ; i < num ; i++){
-        answer.push(middle-(Math.floor(num/2)) + i)
+        answer.push(start+i);
     }
     
     return answer;
